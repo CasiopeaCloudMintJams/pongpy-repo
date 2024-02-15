@@ -1,9 +1,9 @@
 version: 1.0
-runtime: python3 
+runtime: python3
 build:
   commands:
     build:
-  - sudo apt-get install python3-tk
-  - python -m pip install pysimplegui
-run: 
+      - sudo apt-get install python3-tk 
+      - pip install pysimplegui
+run:
   command: python 4-Pong.py
