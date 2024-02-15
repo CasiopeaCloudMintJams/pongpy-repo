@@ -4,6 +4,6 @@ build:
   commands:
     build:
       - sudo yum install python3-tkinter
-      - pip install pysimplegui
+      - pip3 install pysimplegui
 run:
   command: python 4-Pong.py
