@@ -4,7 +4,7 @@
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
 
-import PySimpleGUI
+import simplegui
 import random
 
 # ----------------------------------------------------------------
@@ -154,13 +154,13 @@ def keydown(key):
     
     # updating the velocities of paddles
     
-    if key == PySimpleGUI.KEY_MAP["w"]:
+    if key == simplegui.KEY_MAP["w"]:
         paddle1_vel -= 4
-    elif key == PySimpleGUI.KEY_MAP["s"]:
+    elif key == simplegui.KEY_MAP["s"]:
         paddle1_vel += 4
-    elif key == PySimpleGUI.KEY_MAP["up"]:
+    elif key == simplegui.KEY_MAP["up"]:
         paddle2_vel -= 4
-    elif key == PySimpleGUI.KEY_MAP["down"]:
+    elif key == simplegui.KEY_MAP["down"]:
         paddle2_vel += 4
    
 
@@ -171,9 +171,9 @@ def keyup(key):
     
     # making a paddle motionless
     
-    if (key == PySimpleGUI.KEY_MAP["w"]) or (key == PySimpleGUI.KEY_MAP["s"]):
+    if (key == simplegui.KEY_MAP["w"]) or (key == simplegui.KEY_MAP["s"]):
         paddle1_vel = 0
-    elif (key == PySimpleGUI.KEY_MAP["up"]) or (key == PySimpleGUI.KEY_MAP["down"]):
+    elif (key == simplegui.KEY_MAP["up"]) or (key == simplegui.KEY_MAP["down"]):
         paddle2_vel = 0
     
 # ----------------------------------------------------------------  
@@ -181,7 +181,7 @@ def keyup(key):
 
 
 # create frame
-frame = PySimpleGUI.create_frame("Pong", WIDTH, HEIGHT)
+frame = simplegui.create_frame("Pong", WIDTH, HEIGHT)
 frame.set_draw_handler(draw)
 frame.set_keydown_handler(keydown)
 frame.set_keyup_handler(keyup)
