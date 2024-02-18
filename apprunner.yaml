@@ -6,4 +6,5 @@ build:
       - pip install pipenv
       - pipenv install pysimplegui 
 run: 
+  runtime-version: 3.9
   command: python 4-Pong.py
