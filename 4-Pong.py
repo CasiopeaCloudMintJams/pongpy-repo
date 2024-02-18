@@ -6,7 +6,7 @@
 
 ##import simpleguitk as simplegui
 
-import simplegui
+import pysimplegui as simplegui
 import random
 
 # ----------------------------------------------------------------
