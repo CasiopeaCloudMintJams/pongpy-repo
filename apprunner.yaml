@@ -1,10 +1,9 @@
 version: 1.0
-runtime: python3
+runtime: python3 
 build:
   commands:
-    pre-build:
-      - sudo yum install python3-tkinter
     build:
-      - pip install pysimplegui
-run:
+      - pip install pipenv
+      - pipenv install pysimplegui 
+run: 
   command: python 4-Pong.py
