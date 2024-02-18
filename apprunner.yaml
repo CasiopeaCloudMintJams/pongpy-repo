@@ -3,7 +3,7 @@ runtime: python3
 build:
   commands:
     build:
-      - sudo yum install -y tkinter
+      - pip install tkinter
       - pip install pipenv
       - pip install PySimpleGUI==4.29.0 
 run: 
