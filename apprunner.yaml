@@ -3,7 +3,7 @@ runtime: python311
 build:
   commands:
     build:
-      - pip install pipenv
-      - pip install pysimplegui 
+      - pip3 install pipenv
+      - pip3 install pysimplegui 
 run: 
-  command: python 4-Pong.py
+  command: python3 4-Pong.py
