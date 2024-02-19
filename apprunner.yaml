@@ -7,4 +7,4 @@ build:
       - pip install pipenv
       - pip install pysimplegui==4.14.1
 run: 
-  command: python3 4-Pong.py
+  command: python 4-Pong.py
