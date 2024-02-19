@@ -3,7 +3,7 @@ runtime: python311
 build:
   commands:
     build:
-      - sudo yum install python3-tkinter
+      - sudo yum install -y python3-tkinter
       - pip3 install pipenv
       - pip3 install pysimplegui 
 run: 
