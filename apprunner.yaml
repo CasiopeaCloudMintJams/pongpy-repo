@@ -1,10 +1,10 @@
 version: 1.0
-runtime: python3 
+runtime: python311 
 build:
   commands:
     build:
-      - pip install tkinter
-      - pip install pipenv
-      - pip install PySimpleGUI==4.29.0 
+      - pip3 install tkinter
+      - pip3 install pipenv
+      - pip3 install PySimpleGUI 
 run: 
-  command: python 4-Pong.py
+  command: python3 4-Pong.py
